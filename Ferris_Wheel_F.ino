@@ -10,11 +10,11 @@ const int pin_d5 = 5;
 const int pin_d6 = 6;
 const int pin_d7 = 7;
 const int pin_BL = 10;
-int buttons = 0; //buttons valued at zero
+int buttons = 0; //Declare buttons to pin 0
 int passnum;  //number of passengers
 int ticknum;  //number of tickets
 int select;     // controls select button
-float rides;    // number of rides 
+float rides;    // number of rides must be a float for div tickets and pass
 int motorun = 1;  // motor will run while positive
 
 LiquidCrystal lcd ( pin_RS, pin_EN, pin_d4, pin_d5, pin_d6, pin_d7);  // assign lcd pins
